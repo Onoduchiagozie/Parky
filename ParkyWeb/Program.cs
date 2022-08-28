@@ -52,6 +52,7 @@ app.UseCors(builder =>
 app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseStatusCodePagesWithReExecute("/Home/AccessDenied");
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

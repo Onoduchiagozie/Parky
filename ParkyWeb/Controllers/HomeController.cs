@@ -89,7 +89,7 @@ public class HomeController : Controller
         return RedirectToAction("Index");
     }
     
-    
+    [Route("/Home/AccessDenied")]
     public IActionResult AccessDenied()
     {
         return View();
